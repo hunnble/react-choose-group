@@ -1,0 +1,32 @@
+{
+  "name": "react-choose",
+  "version": "0.0.1",
+  "description": "A easy way to create radio/checkbox group",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunnble/react-choose.git"
+  },
+  "keywords": [
+    "react",
+    "radio",
+    "checkbox",
+    "group",
+    "form",
+    "choose",
+    "component"
+  ],
+  "author": "Noski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hunnble/react-choose/issues"
+  },
+  "homepage": "https://github.com/hunnble/react-choose#readme"
+}
