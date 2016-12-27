@@ -6,6 +6,7 @@ const container = document.querySelector('#container')
 
 class App extends React.Component {
   constructor (props) {
+    super(props)
     this.state = {
       radioValue: 'apolo',
       radioItems: ['apolo', 'zeus', 'athena'],
@@ -30,8 +31,8 @@ class App extends React.Component {
         <Group
           type='radio'
           name='radioGroup'
-          value={this.state.radioValue}
           items={this.state.radioItems}
+          value={this.state.radioValue}
           onChange={this.onRadioChange}
         />
         <h3>{this.state.radioValue}</h3>
@@ -39,8 +40,8 @@ class App extends React.Component {
         <Group
           type='checkbox'
           name='checkboxGroup'
-          value={this.state.checkboxValue}
           items={this.state.checkboxItems}
+          value={this.state.checkboxValues}
           onChange={this.onCheckboxChange}
         />
         <ul>
