@@ -39,4 +39,4 @@ value             | as a controlled component, the value is the whole group's va
 type              | type of items, is `radio` or `checkbox` | Y
 items             | items array | Y
 onChange          | function to handle the changing of the value | Y
-otherValues       | contains `show`(boolean) and `separator`, if `show` is true, a input(text) will be rendered to get other values, if type prop is `checkbox`, the input will be separated by the separator | 
+otherValues       | contains `show`(boolean) and `separator`, if `show` is true, an input(text) will be rendered to get other values, if type prop is `checkbox`, the input will be separated by the separator | 
