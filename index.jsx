@@ -106,7 +106,7 @@ Group.propTypes = {
   itemClassName: PropTypes.string,
   itemStyle: PropTypes.object,
   name: PropTypes.string.isRequired,
-  value: PropTypes.any,
+  value: PropTypes.any.isRequired,
   type: PropTypes.oneOf(['radio', 'checkbox']).isRequired,
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
   onChange: PropTypes.func.isRequired,
