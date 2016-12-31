@@ -34,6 +34,10 @@ class App extends React.Component {
           items={this.state.radioItems}
           value={this.state.radioValue}
           onChange={this.onRadioChange}
+          otherValues={{
+            show: true,
+            separator: ';'
+          }}
         />
         <h3>{this.state.radioValue}</h3>
         <h3>checkbox group</h3>
@@ -43,6 +47,10 @@ class App extends React.Component {
           items={this.state.checkboxItems}
           value={this.state.checkboxValues}
           onChange={this.onCheckboxChange}
+          otherValues={{
+            show: true,
+            separator: ';'
+          }}
         />
         <ul>
           {

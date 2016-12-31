@@ -24,6 +24,21 @@ export class Group extends React.Component {
         throw new Error('Incorrect type of component, check <Group> component please')
     }
   }
+  handleOtherValues = (e) => {
+    const { type, onChange, otherValues } = this.props
+    const values = e.target.value
+    switch (type) {
+      case 'radio':
+        onChange(values)
+        break
+      case 'checkbox':
+        const separator = otherValues.separator ? otherValues.separator : ';'
+        onChange(values.split(separator))
+        break
+      default:
+        throw new Error('Incorrect type of component, check <Group> component please')        
+    }
+  }
   render () {
     const {
       wrapperClassName,
@@ -34,7 +49,8 @@ export class Group extends React.Component {
       value,
       type,
       items,
-      onChange
+      onChange,
+      otherValues
     } = this.props
     return (
       <div className={wrapperClassName} style={wrapperStyle}>
@@ -68,6 +84,17 @@ export class Group extends React.Component {
             </label>
           ))
         }
+        {
+          otherValues &&
+          otherValues.show &&
+          <div className={itemClassName} style={itemStyle}>
+            <input
+              type='text'
+              name={name}
+              onChange={this.handleOtherValues}
+            />
+          </div>
+        }
       </div>
     )
   }
@@ -82,5 +109,12 @@ Group.propTypes = {
   value: PropTypes.any,
   type: PropTypes.oneOf(['radio', 'checkbox']).isRequired,
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
+  otherValues: PropTypes.object
+}
+
+Group.defaultProps = {
+  otherValues: {
+    show: false
+  }
 }
