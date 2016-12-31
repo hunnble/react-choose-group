@@ -1,5 +1,5 @@
 # react-choose
-
+![](https://travis-ci.org/hunnble/react-choose.svg?branch=master)
 > Build radio/checkbox group in a short time.
 
 [demo](http://hunnble.github.io/react-choose/example/example.html)
