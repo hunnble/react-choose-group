@@ -1,6 +1,6 @@
 {
   "name": "react-choose",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A easy way to create radio/checkbox group",
   "main": "index.jsx",
   "directories": {
@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/test.js"
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js ./test/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,9 @@
     "babel-preset-stage-0": "^6.16.0",
     "chai": "^3.5.0",
     "enzyme": "^2.7.0",
+    "jsdom": "^9.9.1",
     "react": "^15.4.1",
+    "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "webpack": "^1.14.0"
   }
