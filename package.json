@@ -1,6 +1,6 @@
 {
   "name": "react-choose",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A easy way to create radio/checkbox group",
   "main": "index.jsx",
   "directories": {
@@ -23,7 +23,7 @@
     "choose",
     "component"
   ],
-  "author": "Noski",
+  "author": "noski",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hunnble/react-choose/issues"
