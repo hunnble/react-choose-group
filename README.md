@@ -1,4 +1,4 @@
-# react-choose
+# react-choose-group
 ![](https://travis-ci.org/hunnble/react-choose.svg?branch=master)
 > Build radio/checkbox group in a short time.
 
@@ -7,7 +7,7 @@
 ### example(/example/example.js)
 ```javascript
 // import the Component
-import { Group } from 'react-choose'
+import { Group } from 'react-choose-group'
 ...
 class YourComponent extends React.Component {
   // render the Component

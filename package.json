@@ -1,5 +1,5 @@
 {
-  "name": "react-choose",
+  "name": "react-choose-group",
   "version": "0.1.0",
   "description": "A easy way to create radio/checkbox group",
   "main": "index.jsx",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hunnble/react-choose.git"
+    "url": "git+https://github.com/hunnble/react-choose-group.git"
   },
   "keywords": [
     "react",
@@ -26,9 +26,9 @@
   "author": "noski",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hunnble/react-choose/issues"
+    "url": "https://github.com/hunnble/react-choose-group/issues"
   },
-  "homepage": "https://github.com/hunnble/react-choose#readme",
+  "homepage": "https://github.com/hunnble/react-choose-group#readme",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",

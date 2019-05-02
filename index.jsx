@@ -36,7 +36,7 @@ export class Group extends React.Component {
         onChange(values.split(separator))
         break
       default:
-        throw new Error('Incorrect type of component, check <Group> component please')        
+        throw new Error('Incorrect type of component, check <Group> component please')
     }
   }
   render () {
